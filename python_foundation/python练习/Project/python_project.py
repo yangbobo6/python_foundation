@@ -1,5 +1,6 @@
 
-#1.编写一个程序，查找所有此类数字，它们可以被7整除，但不能是5的倍数（在2000和3200之间（均包括在内））。获得的数字应以逗号分隔的顺序打印在一行上。
+#1.编写一个程序，查找所有此类数字，它们可以被7整除，但不能是5的倍数（在2000和3200之间（均包括在内））。
+# 获得的数字应以逗号分隔的顺序打印在一行上。
 from functools import reduce
 
 l = []
@@ -105,10 +106,13 @@ print(",".join(D))
 from math import sqrt
 C,H = 50,30
 
-def calc(D):
-    return sqrt((2*C*D)/H)
+def calc(i):
+    return sqrt((2*C*i)/H)
 D = input().split(',')                    # 在逗号位置＃分裂和设置在列表中
 #从里往外   int转化为整数  calc计算   round约等于  str转化成字符串
 D = [str(round(calc(int(i)))) for i in D]  # 使用理解方法＃。
 print(type(D))
 print(",".join(D))
+
+
+#练习7

@@ -7,6 +7,8 @@ def calc(D):
 D = [int(i) for i in input().split(',')]# 在逗号位置＃分裂和在列表中设置
 print(D,type(D))
 D = [int(i) for i in D]    #转换字符串整数
+for i in D:
+    i = int(i)
 print(D,type(D))
 D = [calc(i) for i in D]  # 返回浮点值通过在d每个项目计算方法
 print(D,type(D))
